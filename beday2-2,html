@@ -10,43 +10,27 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top bg-light">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand">Navbar</a>
+            <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          </div>
+        </nav>
+    </div>
+    <!-- <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Home</a>
-        </a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                HTML
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Using HTML tags</a></li>
-                <li><a class="dropdown-item" href="#">Incorporating block elements</a></li>
-                <li><a class="dropdown-item" href="#">Using both spans and divs</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  CSS
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Creating a stylesheet</a></li>
-                  <li><a class="dropdown-item" href="#">Using CSS selectors</a></li>
-                  <li><a class="dropdown-item" href="#">Padding, margins, and box model</a></li>
-                </ul>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  JS
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">What is JavaScript</a></li>
-                  <li><a class="dropdown-item" href="#">Browser Input & Output</a></li>
-                  <li><a class="dropdown-item" href="#">Array & Sorting Algorithms</a></li>
-                </ul>
-            </li>
+          <a class="navbar-brand">Navbar</a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
         </div>
-    </nav>
+      </nav> -->
+
     <div class="container mt-5 pt-5">
         <p>First 5 Weeks at CodeFactory</p>
         <p>
