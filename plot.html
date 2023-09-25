@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,109 +10,190 @@
       crossorigin="anonymous"
     />
     <title>Plot</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">Pride & Prejudice</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas offcanvas-end text-bg-dark"
-              tabindex="-1"
-              id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  Navigation
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close btn-close-white"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="bday2-adex.html"
-                          >Home</a
-                        >
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pride & Prejudice</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="bday2-adex.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="plot.html">Plot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Actors
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="#">Keira Knightley</a>
                     </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="plot.html"
-                      >Plot</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Reviews</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Actors
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li>
-                        <a class="dropdown-item" href="#">Keira Knightley</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Matthew Macfadyen</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Brenda Blethyn</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Donald Sutherland</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">Talulah Riley</a></li>
-                      <li><a class="dropdown-item" href="#">Rosamund Pike</a></li>
-                      <li><a class="dropdown-item" href="#">Jena Malone</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Carey Mulligan</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">And more</a></li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-success" type="submit">Search</button>
-                </form>
-              </div>
+                    <li>
+                      <a class="dropdown-item" href="#">Matthew Macfadyen</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Brenda Blethyn</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Donald Sutherland</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Talulah Riley</a></li>
+                    <li><a class="dropdown-item" href="#">Rosamund Pike</a></li>
+                    <li><a class="dropdown-item" href="#">Jena Malone</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Carey Mulligan</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">And more</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
             </div>
           </div>
-        </nav>
-      </header>
-    
-
-
-
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="my-5">
+          <h1 class="border-start border-primary mb-2 pl-2">Synopsis</h1>
+          <p class="fs-2">
+            This film is the story of the Bennet family, a middle-class family
+            in England around 1800. The principal characters are:
+          </p>
+          <p class="fs-2">
+            Mrs. Bennet (Brenda Blethyn), a hyperexcitable woman obsessed with
+            getting at least one of her daughters into a financially
+            advantageous marriage.
+          </p>
+          <p class="fs-2">
+            Mr. Bennet (Donald Sutherland), who is relaxed, easygoing, and
+            unflappable. He is somewhat amused by the high-spirited behavior of
+            the rest of the family.
+          </p>
+          <p class="fs-2">
+            Jane (Rosamund Pike), the oldest of the daughters. She is serious
+            and thoughtful, but quite shy.
+          </p>
+          <p class="fs-2">
+            Elizabeth (Lizzie) (Keira Knightley), the second daughter and the
+            main character. She is wise, witty, and outspoken. She enjoys (and
+            is very good at) verbal sparring and skirmishing with people.
+          </p>
+          <p class="fs-2">
+            Mary (Talulah Riley), the third, not at all socially outgoing or
+            interested in chasing men. She spends her time reading, playing the
+            piano, and speaking of how much more interesting nature is than
+            human society.
+          </p>
+          <p class="fs-2">
+            Katherine (Kitty) (Carey Mulligan), like Lydia, is a boy-crazy
+            teenager. The two of them are not interested in any serious
+            pursuits; they just want to go to parties and dances. Kitty is
+            impressionable and takes her cues from Lydia.
+          </p>
+          <p class="fs-2">
+            Lydia (Jena Malone) is even more frivolous than Kitty.
+          </p>
+          <p class="fs-2">
+            Charles Bingley (Simon Woods) is a wealthy and good-natured
+            gentleman from London who moves into a nearby estate, causing great
+            interest among the Bennets.
+          </p>
+          <p class="fs-2">
+            Fitzwilliam Darcy (Matthew Macfadyen) is an extremely wealthy
+            gentleman from the North of England. Unfortunately, he is
+            ill-at-ease and inarticulate in social situations. He does not
+            express himself well, and creates a bad impression on people.
+          </p>
+          <p class="fs-2">
+            The reason that an advantageous marriage is important is that the
+            house and land are covered by a covenant that would give it to the
+            eldest male heir on Mr. Bennet's death, but, having no sons, it will
+            go to their cousin, William Collins. This would leave the family
+            destitute.
+          </p>
+          <p class="fs-2"></p>
+          <p class="fs-2">
+            The film opens with a tracking shot of a green covered field on a
+            sun-lit morning. Elizabeth "Lizzie" Bennet walks along the field
+            finishing a book. Upon coming home, she overhears her mother telling
+            her father excitedly that Netherfield, a nearby estate, has been
+            rented by a Mr. Bingley, a wealthy gentleman from London. Mrs.
+            Bennet begs Mr. Bennet to call on Mr. Bingley, believing him to be a
+            very suitable match for any of her daughters. Mr. Bennett finally
+            divulges that he has already met Mr. Bingley--he enjoys playing his
+            low-key detached persona off of his wife's hyper-excitablility. When
+            he says that they can all expect to see Mr. Bingley at an upcoming
+            public ball, all of the Bennet daughters (who had been listening
+            intently at the keyhole) squeal in excitement. Lizzie herself and
+            the eldest sister Jane smile with pleasure, as the younger Lydia and
+            Kitty jump up and down, and immediately begin to beg Jane to borrow
+            her prettiest pair of shoes. Mary merely goes back to playing her
+            piano. As Mr. Bennet leaves his study and sees that the five girls
+            were all listening, he simply walks past them, amusedly saying "Good
+            heavens! People!"
+          </p>
+        </div>
+      </div>
+    </main>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-</body>
+  </body>
 </html>
