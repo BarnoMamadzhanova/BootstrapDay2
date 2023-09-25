@@ -7,7 +7,52 @@
     <title>Advanced Exercise</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Pride & Prejudice</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Navigation</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Plot</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Actors
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Keira Knightley</a></li>
+                        <li><a class="dropdown-item" href="#">Matthew Macfadyen</a></li>
+                        <li><a class="dropdown-item" href="#">Brenda Blethyn</a></li>
+                        <li><a class="dropdown-item" href="#">Donald Sutherland</a></li>
+                        <li><a class="dropdown-item" href="#">Talulah Riley</a></li>
+                        <li><a class="dropdown-item" href="#">Rosamund Pike</a></li>
+                        <li><a class="dropdown-item" href="#">Jena Malone</a></li>
+                        <li><a class="dropdown-item" href="#">Carey Mulligan</a></li>
+                        <li><a class="dropdown-item" href="#">And more</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
 
 
 
