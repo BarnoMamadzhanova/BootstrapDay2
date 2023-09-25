@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -10,110 +10,358 @@
       crossorigin="anonymous"
     />
      -->
-     <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css" />
     <title>Actors</title>
-</head>
-<body>
+    <style>
+      #KeiraKnightley {
+        scroll-margin-top: 5rem;
+      }
+    </style>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="bday2-adex.html">Pride & Prejudice</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasDarkNavbar"
-              aria-controls="offcanvasDarkNavbar"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div
-              class="offcanvas offcanvas-end text-bg-dark"
-              tabindex="-1"
-              id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  Navigation
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close btn-close-white"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="bday2-adex.html"
-                        >Home</a
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="bday2-adex.html">Pride & Prejudice</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasDarkNavbar"
+            aria-controls="offcanvasDarkNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end text-bg-dark"
+            tabindex="-1"
+            id="offcanvasDarkNavbar"
+            aria-labelledby="offcanvasDarkNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                Navigation
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="bday2-adex.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="plot.html">Plot</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reviews</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="actors.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Actors
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li>
+                      <a class="dropdown-item" href="#KeiraKnightley"
+                        >Keira Knightley</a
                       >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="plot.html"
-                      >Plot</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Reviews</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="actors.html"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Actors
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li>
-                        <a class="dropdown-item" href="#KeiraKnightley"  data-bs-target="#Keira Knightley">Keira Knightley</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Matthew Macfadyen</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Brenda Blethyn</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Donald Sutherland</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">Talulah Riley</a></li>
-                      <li><a class="dropdown-item" href="#">Rosamund Pike</a></li>
-                      <li><a class="dropdown-item" href="#">Jena Malone</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Carey Mulligan</a>
-                      </li>
-                      <li><a class="dropdown-item" href="#">And more</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#MatthewMacfadyen"
+                        >Matthew Macfadyen</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#BrendaBlethyn"
+                        >Brenda Blethyn</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#DonaldSutherland"
+                        >Donald Sutherland</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#TalulahRiley"
+                        >Talulah Riley</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#RosamundPike"
+                        >Rosamund Pike</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#JenaMalone"
+                        >Jena Malone</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#CareyMulligan"
+                        >Carey Mulligan</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="https://www.imdb.com/title/tt0414387/fullcredits?ref_=tt_cl_sm"
+                        >And more</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
-        </nav>
-      </header>
-      <main>
-        <div class="container">
-           <div class="d-flex flex-row" id="KeiraKnightley">Keira Knightley
-              <div>
-                <h3>Elizabeth Bennet</h3>
-              </div>
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/KeiraKnightleyByAndreaRaffin2011_%28cropped%29.jpg/330px-KeiraKnightleyByAndreaRaffin2011_%28cropped%29.jpg" class="img-fluid rounded w-25" alt="foto">
-           </div>
         </div>
-      </main>
+      </nav>
+    </header>
+    <main>
+      <div class="container my-5 py-5">
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="KeiraKnightley"
+        >
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Keira Knightley
+            </h2>
+            <p class="fs-3">Elizabeth Bennet</p>
+            <p class="fs-4">
+              Keira Christina Knightley was born March 26, 1985 in the South
+              West Greater London suburb of Richmond. She is the daughter of
+              actor Will Knightley and actress turned playwright Sharman
+              Macdonald. An older brother, Caleb Knightley, was born in 1979.
+              Her father is English, while her Scottish-born mother is of
+              Scottish and Welsh origin. Brought up immersed in the acting
+              profession from both sides - writing and performing - it is little
+              wonder that the young Keira asked for her own agent at the age of
+              three. She was granted one at the age of six and performed in her
+              first TV role as "Little Girl" in Royal Celebration (1993), aged
+              seven.
+            </p>
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/KeiraKnightleyByAndreaRaffin2011_%28cropped%29.jpg/330px-KeiraKnightleyByAndreaRaffin2011_%28cropped%29.jpg"
+            class="img-fluid rounded-circle float-end w-25"
+            alt="foto"
+          />
+        </div>
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="MatthewMacfadyen"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Matthew_Macfadyen_2007.jpg/255px-Matthew_Macfadyen_2007.jpg"
+            class="img-fluid rounded-circle float-start w-100"
+            alt="foto"
+          />
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Matthew Macfadyen
+            </h2>
+            <p class="fs-3">Mr. Darcy</p>
+            <p class="fs-4">
+              David Matthew Macfadyen was born in Great Yarmouth, Norfolk, to
+              Meinir (Owen), a drama teacher and actress, and Martin Macfadyen,
+              an oil executive. He is of Scottish and Welsh descent. Because of
+              his father's career, he spent at least part of his childhood in
+              Indonesia, before finishing his education back in England and
+              winning a place at RADA in 1992. He won critical acclaim in the UK
+              with his work with the stage company Cheek By Jowl in the 1990s
+              and was well established as a stage actor when he made his first
+              TV appearance in Wuthering Heights (1998). A couple more TV roles
+              followed but it was his role as Tom Quinn, head of Section D, in
+              the hit BBC series MI-5 (2002) that really made his name at home.
+              And, indeed, established his home - he met his wife, Keeley Hawes,
+              while working on the show. A steady stream of TV and film work
+              followed, with his performance as Mr Darcy in Pride & Prejudice
+              (2005) firmly establishing his name worldwide.
+            </p>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="BrendaBlethyn"
+        >
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Brenda Blethyn
+            </h2>
+            <p class="fs-3">Mrs. Bennet</p>
+            <p class="fs-4">
+              After forty years of hard work on stage and both television and
+              film, there are not many other actresses who deserved the success,
+              recognition and stardom which Brenda Blethyn has now achieved.
+              Born in 1946 in Ramsgate, Kent, England, she started her career at
+              British Rail in the 1960s. Saving money during her time there, she
+              took a risk and enrolled herself at the at The Guildford School of
+              Acting in Guildford, Surrey, England and then left her British
+              Rail years behind. Her risk had paid off, by the mid-1970s she was
+              working on stage, eventually joining the National Theatre Company
+              in 1975.
+            </p>
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Brenda_Blethyn_at_the_2014_Berlin_Film_Festival.jpg/330px-Brenda_Blethyn_at_the_2014_Berlin_Film_Festival.jpg"
+            class="img-fluid rounded-circle float-end w-25"
+            alt="foto"
+          />
+        </div>
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="DonaldSutherland"
+        >
+          <img
+            src="https://www.themoviedb.org/t/p/w500/kO8rtLr9cCPSR55tDLakmEoCZRP.jpg"
+            class="img-fluid rounded-circle float-start w-25"
+            alt="foto"
+          />
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Donald Sutherland
+            </h2>
+            <p class="fs-3">Mr. Bennet</p>
+            <p class="fs-4">
+              Donald McNichol Sutherland was born in Saint John, New Brunswick,
+              to Dorothy Isobel (McNichol) and Frederick McLea Sutherland, who
+              worked in sales and electricity. He has Scottish, as well as
+              German and English, ancestry. Sutherland worked several different
+              jobs - he was a radio DJ in his youth - and was almost set on
+              becoming an engineer after graduating from the University of
+              Toronto with a degree in engineering. However, he also graduated
+              with a degree in drama, and he chose to abandon becoming an
+              engineer in favour of an actor.
+            </p>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="TalulahRiley"
+        >
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Talulah Riley
+            </h2>
+            <p class="fs-3">Mary Bennet</p>
+            <p class="fs-4">
+              Talulah Riley is an English actress. She has appeared in films
+              such as Pride & Prejudice (2005), St. Trinian's (2007), The Boat
+              That Rocked (2009) and Inception (2010). She made her stage debut
+              in The Philadelphia Story at the Old Vic in 2005. Her television
+              credits include episodes of Poirot (Five Little Pigs (2003)),
+              Marple (The Moving Finger (2006)), Doctor Who (Silence in the
+              Library (2008) and Forest of the Dead (2008)) and the HBO
+              television series Westworld (2016).
+            </p>
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/86/TalulahRileyAug09.jpg"
+            class="img-fluid rounded-circle float-end w-25"
+            alt="foto"
+          />
+        </div>
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="RosamundPike"
+        >
+          <img
+            src="https://ntvb.tmsimg.com/assets/assets/269690_v9_bc.jpg?w=270&h=360"
+            class="img-fluid rounded-circle float-start w-100"
+            alt="foto"
+          />
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Rosamund Pike
+            </h2>
+            <p class="fs-3">Jane Bennet</p>
+            <p class="fs-4">
+              Born in 1979 in London, England, actress Rosamund Mary Elizabeth
+              Pike is the only child of a classical violinist mother, Caroline
+              (Friend), and an opera singer father, Julian Pike.Pike appeared in
+              a number of UK television series, including Wives and Daughters
+              (1999), before scoring an auspicious feature film debut as the
+              glacial beauty "Miranda Frost" in the James Bond film.Pike entered
+              into a relationship with a mathematical researcher named Robie
+              Uniacke in 2009.
+            </p>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="JenaMalone"
+        >
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Jena Malone
+            </h2>
+            <p class="fs-3">Lydia Bennet</p>
+            <p class="fs-4">
+              Jena Malone was born in Reno, Nevada, raised in Sparks, Nevada;
+              two cities that have merged together over time, to Deborah Malone
+              and Edward Berge. Malone's first claim to fame was in performing
+              the title role in Bastard Out of Carolina (1996) for which she won
+              the Young Artist Award, and which she filmed when she was merely
+              ten years old.In early 2006, Malone debuted on the Broadway stage
+              in the play "Doubt". A review by Broadway.com characterized her
+              performance as "astonishing".
+            </p>
+          </div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/1/13/Jena_Malone_Deauville.jpg"
+            class="img-fluid rounded-circle float-end w-25"
+            alt="foto"
+          />
+        </div>
+        <div
+          class="d-flex flex-row justify-content-around align-items-center mb-3"
+          id="CareyMulligan"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Carey_Mulligan_2%2C_2013.jpg/800px-Carey_Mulligan_2%2C_2013.jpg"
+            class="img-fluid rounded-circle float-start w-25"
+            alt="foto"
+          />
+          <div class="p-2">
+            <h2 class="border-4 border-start border-warning mb-3 ps-2">
+              Carey Mulligan
+            </h2>
+            <p class="fs-3">Kitty Bennet</p>
+            <p class="fs-4">
+              Carey Hannah Mulligan is a British actress. She was born May 28,
+              1985, in Westminster, London, England, to Nano (Booth), a
+              university lecturer, and Stephen Mulligan, a hotel manager. Her
+              mother is from Llandeilo, Wales, and Carey also has Irish and
+              English ancestry. Her first major appearance was playing Kitty
+              Bennet in Pride & Prejudice (2005) alongside Keira Knightley, Judi
+              Dench, and Donald Sutherland. Carey also played orphan Ada Clare
+              in the BBC television series Bleak House (2005).
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
-
-
-    <script
+    <!-- <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script>
-</body>
+    ></script> -->
+    <script src="/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
